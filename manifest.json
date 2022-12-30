@@ -1,0 +1,18 @@
+
+{
+    "name": "計算青職年齡",
+    "description": "calculate youngWokers",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["*://www.chlife-stat.org/*"],
+        "js": ["./index.js"]
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
