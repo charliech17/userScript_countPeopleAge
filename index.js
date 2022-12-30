@@ -23,7 +23,7 @@ async function checkIsAboveAge(person) {
     const baseDom = document.getElementById('saint-panel')
     const santName = baseDom.querySelector('#member_name').value
     const birthYear = baseDom.querySelector("[name=year_of_birth]").value
-    if(birthYear < 1986) {
+    if(birthYear < limitAge) {
         console.log('七會所 ' + santName + " 超過青職年齡，他/她是 " + birthYear + " 生的。")
     }
 
@@ -44,4 +44,7 @@ function timeDelay(timeDelay) {
     })
 }
 
+// 使用說明
+// 1. 登入 2. 選擇年齡層(青職) 3. 更改 limitAge 4. 按下 c + ctrl + alt 開始計算 5. 結果顯示在console 
+const limitAge =  1987
 init()
